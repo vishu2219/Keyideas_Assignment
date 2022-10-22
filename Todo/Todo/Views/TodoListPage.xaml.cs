@@ -92,6 +92,11 @@ namespace Todo.Views
             await dataBase.InsertAllAsync(product);
             //var products = await dataBase.Table<TodoItem>().ToListAsync();
 
+            //foreach(var item in product)
+            //{
+              //  await dataBase.InsertAsync(item);
+            //}
+
             jason.ItemsSource = product;
 
         }
